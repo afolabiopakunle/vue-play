@@ -11,8 +11,13 @@ new Vue({
             },
             {
                 task: "Watch Cartoon",
-                done: true
+                done: false
             },
         ]
+    },
+    methods: {
+        toggle: function (todo) {
+            todo.done = !todo.done
+        }
     }
 })
